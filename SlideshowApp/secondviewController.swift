@@ -8,12 +8,12 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
-    
-
+class secondviewController: UIViewController {
 
     @IBOutlet weak var Lphoto: UIImageView!
-    var selectphoto : UIImage!
+    
+    var selectphoto : UIImage?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         Lphoto.image = selectphoto

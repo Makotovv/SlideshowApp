@@ -19,13 +19,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func behind(_ sender: Any) {
-        // if  スライド動いている時は無効にさせる・再生/停止ボタンで停止の表示中はボタン無効でもある
+        //スライド動作（＋）
         dispImageNO += 1
         displayImage()
     }
     
     @IBAction func Forward(_ sender: Any) {
-        // if  スライド動いている時は無効にさせる・再生/停止ボタンで停止の表示中はボタン無効でもある
+        //スライド動作（−）
         dispImageNO -= 1
         displayImage()
     }
@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     
     //表示している画像の番号を元に画像を表示する
     func displayImage(){
-        //let imageNameArray = ["AIRDO.jpg","ANA.jpg","JAL.jpg","SFJ.jpeg","SNJ.jpg",]
         //範囲より下を指している場合、最後の画像を表示
         if dispImageNO < 0{
             dispImageNO = 4
@@ -73,6 +72,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let image = UIImage(named : "AIRDO.jpg")
         imageView.image = image
+        
+
     }
     
     //imaerによって一定の間隔で呼び出される関数
@@ -93,7 +94,7 @@ class ViewController: UIViewController {
     
     //segueの設定
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondviewController :secondViewController = segue.destination as! secondViewController
+        let secondviewController :secondviewController = segue.destination as! secondviewController
         secondviewController.selectphoto = UIImage(named:imageNameArray[dispImageNO])
         
     }
