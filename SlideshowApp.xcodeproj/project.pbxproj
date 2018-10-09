@@ -12,6 +12,12 @@
 		2E1E2546216C54010014776A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2544216C54010014776A /* Main.storyboard */; };
 		2E1E2548216C54070014776A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2547216C54070014776A /* Assets.xcassets */; };
 		2E1E254B216C54070014776A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2549216C54070014776A /* LaunchScreen.storyboard */; };
+		2E1E2553216C54BB0014776A /* secondviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1E2552216C54BB0014776A /* secondviewController.swift */; };
+		2E1E2559216C55790014776A /* SFJ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2554216C55780014776A /* SFJ.jpeg */; };
+		2E1E255A216C55790014776A /* JAL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2555216C55790014776A /* JAL.jpg */; };
+		2E1E255B216C55790014776A /* SNJ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2556216C55790014776A /* SNJ.jpg */; };
+		2E1E255C216C55790014776A /* ANA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2557216C55790014776A /* ANA.jpg */; };
+		2E1E255D216C55790014776A /* AIRDO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E1E2558216C55790014776A /* AIRDO.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		2E1E2547216C54070014776A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E1E254A216C54070014776A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E1E254C216C54070014776A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1E2552216C54BB0014776A /* secondviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondviewController.swift; sourceTree = "<group>"; };
+		2E1E2554216C55780014776A /* SFJ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SFJ.jpeg; sourceTree = "<group>"; };
+		2E1E2555216C55790014776A /* JAL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JAL.jpg; sourceTree = "<group>"; };
+		2E1E2556216C55790014776A /* SNJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SNJ.jpg; sourceTree = "<group>"; };
+		2E1E2557216C55790014776A /* ANA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ANA.jpg; sourceTree = "<group>"; };
+		2E1E2558216C55790014776A /* AIRDO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AIRDO.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,14 @@
 				2E1E2542216C54010014776A /* ViewController.swift */,
 				2E1E2544216C54010014776A /* Main.storyboard */,
 				2E1E2547216C54070014776A /* Assets.xcassets */,
+				2E1E2558216C55790014776A /* AIRDO.jpg */,
+				2E1E2557216C55790014776A /* ANA.jpg */,
+				2E1E2555216C55790014776A /* JAL.jpg */,
+				2E1E2554216C55780014776A /* SFJ.jpeg */,
+				2E1E2556216C55790014776A /* SNJ.jpg */,
 				2E1E2549216C54070014776A /* LaunchScreen.storyboard */,
 				2E1E254C216C54070014776A /* Info.plist */,
+				2E1E2552216C54BB0014776A /* secondviewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -122,9 +140,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1E255C216C55790014776A /* ANA.jpg in Resources */,
 				2E1E254B216C54070014776A /* LaunchScreen.storyboard in Resources */,
 				2E1E2548216C54070014776A /* Assets.xcassets in Resources */,
 				2E1E2546216C54010014776A /* Main.storyboard in Resources */,
+				2E1E255B216C55790014776A /* SNJ.jpg in Resources */,
+				2E1E2559216C55790014776A /* SFJ.jpeg in Resources */,
+				2E1E255A216C55790014776A /* JAL.jpg in Resources */,
+				2E1E255D216C55790014776A /* AIRDO.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E1E2543216C54010014776A /* ViewController.swift in Sources */,
+				2E1E2553216C54BB0014776A /* secondviewController.swift in Sources */,
 				2E1E2541216C54010014776A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
