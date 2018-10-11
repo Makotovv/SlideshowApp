@@ -96,24 +96,19 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if timer !== nil{
             self.timer.invalidate()
+            }
             let secondviewController :secondviewController = segue.destination as! secondviewController
             secondviewController.selectphoto = UIImage(named:imageNameArray[dispImageNO])
-        }else{
-        let secondviewController :secondviewController = segue.destination as! secondviewController
-        secondviewController.selectphoto = UIImage(named:imageNameArray[dispImageNO])
-        }
-        
     }
+        
+ 
     //戻り
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-                start.setTitle("再生",for: .normal)
-                susumu.isEnabled = true
-                modoru.isEnabled = true
-        
-        
+        self.timer = nil
+        start.setTitle("再生",for: .normal)
+        susumu.isEnabled = true
+        modoru.isEnabled = true
         }
-        
-    
 }
 
 
