@@ -44,6 +44,8 @@ class ViewController: UIViewController {
             modoru.isEnabled = true
         }
     }
+    
+    
     var timer : Timer!
     
     //表示している画像の番号
@@ -72,8 +74,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let image = UIImage(named : "AIRDO.jpg")
         imageView.image = image
-        
-
     }
     
     //imaerによって一定の間隔で呼び出される関数
@@ -94,13 +94,26 @@ class ViewController: UIViewController {
     
     //segueの設定
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if timer !== nil{
+            self.timer.invalidate()
+            let secondviewController :secondviewController = segue.destination as! secondviewController
+            secondviewController.selectphoto = UIImage(named:imageNameArray[dispImageNO])
+        }else{
         let secondviewController :secondviewController = segue.destination as! secondviewController
         secondviewController.selectphoto = UIImage(named:imageNameArray[dispImageNO])
+        }
         
     }
     //戻り
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-    }    
+                start.setTitle("再生",for: .normal)
+                susumu.isEnabled = true
+                modoru.isEnabled = true
+        
+        
+        }
+        
+    
 }
 
 
